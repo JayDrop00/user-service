@@ -3,6 +3,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from './config/config.module';
 import { UserModule } from './user/user.module';
 import { Logger } from './common/logger.service';
+import dotenv from 'dotenv';
+dotenv.config();
 
 @Module({
   imports: [
